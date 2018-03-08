@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIColor+CustomColor.h"
+#import "UIApplication+Permissions.h"
 @interface ViewController ()
 
 @end
@@ -19,6 +20,7 @@
 //    self.view.backgroundColor = [UIColor colorWithHexNumber:0xDC143C];
 //    self.view.backgroundColor = [UIColor colorWithHexString:@"DC143C"];
     self.view.backgroundColor = [UIColor gradientFromColor:[UIColor redColor] toColor:[UIColor blueColor] withHeight:self.view.bounds.size.height];
+    NSLog(@"%u",[[UIApplication sharedApplication] hasAccessToPhotos]);
 }
 
 
