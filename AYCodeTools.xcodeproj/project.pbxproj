@@ -15,6 +15,7 @@
 		224E3EE62050E4F900B3219A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E3EE52050E4F900B3219A /* main.m */; };
 		224E3EF02050E4F900B3219A /* AYCodeToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E3EEF2050E4F900B3219A /* AYCodeToolsTests.m */; };
 		224E3EFB2050E4F900B3219A /* AYCodeToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E3EFA2050E4F900B3219A /* AYCodeToolsUITests.m */; };
+		224E3F122050E87900B3219A /* UIColor+CustomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E3F112050E87900B3219A /* UIColor+CustomColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		224E3EF62050E4F900B3219A /* AYCodeToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AYCodeToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		224E3EFA2050E4F900B3219A /* AYCodeToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AYCodeToolsUITests.m; sourceTree = "<group>"; };
 		224E3EFC2050E4F900B3219A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		224E3F102050E87900B3219A /* UIColor+CustomColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+CustomColor.h"; sourceTree = "<group>"; };
+		224E3F112050E87900B3219A /* UIColor+CustomColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		224E3ED52050E4F800B3219A /* AYCodeTools */ = {
 			isa = PBXGroup;
 			children = (
+				224E3F082050E5B900B3219A /* Category */,
 				224E3ED62050E4F800B3219A /* AppDelegate.h */,
 				224E3ED72050E4F800B3219A /* AppDelegate.m */,
 				224E3ED92050E4F800B3219A /* ViewController.h */,
@@ -130,6 +134,23 @@
 				224E3EFC2050E4F900B3219A /* Info.plist */,
 			);
 			path = AYCodeToolsUITests;
+			sourceTree = "<group>";
+		};
+		224E3F082050E5B900B3219A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				224E3F0F2050E83700B3219A /* UIColor */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		224E3F0F2050E83700B3219A /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				224E3F102050E87900B3219A /* UIColor+CustomColor.h */,
+				224E3F112050E87900B3219A /* UIColor+CustomColor.m */,
+			);
+			path = UIColor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +288,7 @@
 			files = (
 				224E3EDB2050E4F800B3219A /* ViewController.m in Sources */,
 				224E3EE62050E4F900B3219A /* main.m in Sources */,
+				224E3F122050E87900B3219A /* UIColor+CustomColor.m in Sources */,
 				224E3ED82050E4F800B3219A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +455,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J2ATC22AZM;
 				INFOPLIST_FILE = AYCodeTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AYJk.AYCodeTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J2ATC22AZM;
 				INFOPLIST_FILE = AYCodeTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AYJk.AYCodeTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
