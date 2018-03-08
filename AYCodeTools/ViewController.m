@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "UIColor+CustomColor.h"
 #import "UIApplication+Permissions.h"
+#import "UIBarButtonItem+Block.h"
 @interface ViewController ()
 
 @end
@@ -19,8 +20,17 @@
     [super viewDidLoad];
 //    self.view.backgroundColor = [UIColor colorWithHexNumber:0xDC143C];
 //    self.view.backgroundColor = [UIColor colorWithHexString:@"DC143C"];
-    self.view.backgroundColor = [UIColor gradientFromColor:[UIColor redColor] toColor:[UIColor blueColor] withHeight:self.view.bounds.size.height];
+    self.view.backgroundColor = [UIColor gradientFromColor:[UIColor whiteColor] toColor:[UIColor blackColor] withHeight:self.view.bounds.size.height];
+    
+    
     NSLog(@"%u",[[UIApplication sharedApplication] hasAccessToPhotos]);
+    
+    
+    UIBarButtonItem *testItem = [[UIBarButtonItem alloc] initWithTitle:@"TapTap" style:UIBarButtonItemStylePlain target:nil action:nil];
+    testItem.actionBlock = ^{
+        NSLog(@"点击");
+    };
+    self.navigationItem.rightBarButtonItem = testItem;
 }
 
 

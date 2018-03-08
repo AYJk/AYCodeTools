@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2240E9FB20511632006D0CA6 /* UIApplication+Permissions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2240E9FA20511632006D0CA6 /* UIApplication+Permissions.m */; };
+		2240E9FF20512081006D0CA6 /* UIBarButtonItem+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 2240E9FE20512081006D0CA6 /* UIBarButtonItem+Block.m */; };
 		224E3ED82050E4F800B3219A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E3ED72050E4F800B3219A /* AppDelegate.m */; };
 		224E3EDB2050E4F800B3219A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 224E3EDA2050E4F800B3219A /* ViewController.m */; };
 		224E3EDE2050E4F800B3219A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224E3EDC2050E4F800B3219A /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		2240E9F920511632006D0CA6 /* UIApplication+Permissions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Permissions.h"; sourceTree = "<group>"; };
 		2240E9FA20511632006D0CA6 /* UIApplication+Permissions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Permissions.m"; sourceTree = "<group>"; };
+		2240E9FD20512081006D0CA6 /* UIBarButtonItem+Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Block.h"; sourceTree = "<group>"; };
+		2240E9FE20512081006D0CA6 /* UIBarButtonItem+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Block.m"; sourceTree = "<group>"; };
 		224E3ED32050E4F800B3219A /* AYCodeTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AYCodeTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		224E3ED62050E4F800B3219A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		224E3ED72050E4F800B3219A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,6 +94,15 @@
 				2240E9FA20511632006D0CA6 /* UIApplication+Permissions.m */,
 			);
 			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		2240E9FC20512061006D0CA6 /* UIBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				2240E9FD20512081006D0CA6 /* UIBarButtonItem+Block.h */,
+				2240E9FE20512081006D0CA6 /* UIBarButtonItem+Block.m */,
+			);
+			path = UIBarButtonItem;
 			sourceTree = "<group>";
 		};
 		224E3ECA2050E4F800B3219A = {
@@ -151,6 +163,7 @@
 		224E3F082050E5B900B3219A /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				2240E9FC20512061006D0CA6 /* UIBarButtonItem */,
 				2240E9F82051161B006D0CA6 /* UIApplication */,
 				224E3F0F2050E83700B3219A /* UIColor */,
 			);
@@ -303,6 +316,7 @@
 				224E3EE62050E4F900B3219A /* main.m in Sources */,
 				2240E9FB20511632006D0CA6 /* UIApplication+Permissions.m in Sources */,
 				224E3F122050E87900B3219A /* UIColor+CustomColor.m in Sources */,
+				2240E9FF20512081006D0CA6 /* UIBarButtonItem+Block.m in Sources */,
 				224E3ED82050E4F800B3219A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
