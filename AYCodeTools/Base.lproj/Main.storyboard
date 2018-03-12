@@ -36,13 +36,28 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajS-JC-PD1">
+                                <rect key="frame" x="20" y="114" width="54" height="34"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ajS-JC-PD1" firstAttribute="top" secondItem="oAe-W4-QNd" secondAttribute="bottom" constant="50" id="Cal-F0-UfP"/>
+                            <constraint firstItem="ajS-JC-PD1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="THe-3d-qVK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PQW-KU-e3h"/>
+                    <connections>
+                        <outlet property="testButton" destination="ajS-JC-PD1" id="pu2-Ef-cBg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-358" y="57"/>
+            <point key="canvasLocation" x="-359.19999999999999" y="56.221889055472268"/>
         </scene>
     </scenes>
 </document>

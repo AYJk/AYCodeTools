@@ -10,7 +10,13 @@
 #import "UIColor+CustomColor.h"
 #import "UIApplication+Permissions.h"
 #import "UIBarButtonItem+Block.h"
+#import "UIButton+Unit.h"
+#import "AYCodeTools.pch"
+#import "AYTools.h"
+#import "NSString+Unit.h"
+
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *testButton;
 
 @end
 
@@ -31,7 +37,24 @@
         NSLog(@"点击");
     };
     self.navigationItem.rightBarButtonItem = testItem;
+    
+    
+    [self.testButton setBackgroundColor:[UIColor redColor] forState:UIControlStateNormal];
+    [self.testButton setBackgroundColor:[UIColor blueColor] forState:UIControlStateHighlighted];
+    
+    [self.testButton setTitle:@"点击发送" forState:UIControlStateNormal];
+    [self.testButton actionBlock:^(NSInteger tag) {
+        AYLog(@"点击button，block回调，tag为：%ld",(long)tag);
+        [self.testButton countDownTime:10 finishedTitle:@"点击重发" counttingTitle:@"秒后重新获取"];
+    }];
+    [self.testButton setImage:[UIImage imageNamed:@"countDown"] forState:UIControlStateNormal];
+    
+    AYLog(@"%lu",[AYTools currentDeviceType]);
+    AYLog(@"SHA1: %@",[@"123" handleSHA1String]);
+    AYLog(@"MD5: %@",[@"123" handleMD5String32Bit]);
 }
+
+
 
 
 - (void)didReceiveMemoryWarning {
